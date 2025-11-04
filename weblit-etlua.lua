@@ -41,7 +41,7 @@ local function createRenderer(env, options)
           return
         end
         -- reset the response
-        res.body = options.error_message or 'An error has occured'
+        res.body = options.error_message or 'An error has occurred'
         res.code = 500
         -- resetting headers helps with removing things like etag hashes
         -- so we don't end up caching errors
